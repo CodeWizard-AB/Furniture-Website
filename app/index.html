@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Furniture Website</title>
+
+		<!-- * FONT REFERENCE -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- * CSS REFERENCE -->
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="text-font">
+
+		<!-- * HEADER COMPONENTS -->
+
+		<header>
+			<!-- * NAVIGATION SECTION -->
+
+			<nav class="navbar container py-8">
+				<h3 class="flex-1">
+					<a class="text-3xl text-primary font-bold">Furniture</a>
+				</h3>
+				<ul
+					class="md:menu-horizontal text-base space-x-16 font-semibold hidden"
+				>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Gallery</a></li>
+				</ul>
+				<button class="md:hidden">
+					<ion-icon name="menu-outline" size="large"></ion-icon>
+				</button>
+			</nav>
+
+			<!-- * HERO BANNER SECTION -->
+
+			<section
+				class="hero min-h-screen"
+				style="background-image: url(./Images/banner.png)"
+			>
+				<div
+					class="hero-content text-center text-neutral-content md:text-left lg:justify-end container justify-center p-0"
+				>
+					<div
+						class="max-w-screen-sm bg-secondary md:p-12 p-6 text-font rounded-2xl"
+					>
+						<p class="text-base font-semibold tracking-wider mb-4">
+							New Arrival
+						</p>
+						<h1
+							class="mb-5 md:text-6xl text-3xl font-bold text-primary md:leading-snug"
+						>
+							Discover Our New Collection
+						</h1>
+						<p class="mb-8 font-medium md:text-lg md:leading-loose">
+							Transform your home with timeless pieces. Explore our curated
+							collection of high-quality furniture for a touch of classic
+							elegance in every room.
+						</p>
+						<button
+							class="btn bg-primary/95 hover:bg-primary px-14 rounded-full text-white text-lg"
+						>
+							Buy Now
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- * SERVICE SECTION -->
+
+			<section class="bg-mini_section py-12">
+				<div class="container grid-three gap-6">
+					<figure class="service">
+						<img
+							src="Images/delivery.png"
+							alt="delivery service"
+							class="max-w-16 md:w-auto"
+						/>
+						<figcaption>
+							<h3 class="service-heading">Free Delivery</h3>
+							<p class="content-summary">
+								Free delivery on all orders — straight to your doorstep.
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="service">
+						<img
+							src="Images/24hour.png"
+							alt="24 hour sevice"
+							class="max-w-16"
+						/>
+						<figcaption>
+							<h3 class="service-heading">Support 24/7</h3>
+							<p class="content-summary">
+								Reliable assistance whenever you need it with our 24/7 service.
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="service">
+						<img
+							src="Images/shield.png"
+							alt="shield protection"
+							class="max-w-16"
+						/>
+						<figcaption>
+							<h3 class="service-heading">100% Authentic</h3>
+							<p class="content-summary">
+								Shop with confidence through our authentication process
+							</p>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+		</header>
+
+		<!-- * MAIN COMPONENTS -->
+
+		<main>
+			<section class="py-16 container">
+				<div class="section-heading text-center">
+					<h2 class="content-heading">Inspiration Collection</h2>
+					<p class="content-summary text-base">
+						Indulge in our curated Inspiration Collection, where every
+						handpicked piece is designed to ignite creativity and bring
+						unparalleled style to your living spaces.
+					</p>
+				</div>
+
+				<div class="grid-three pt-5 gap-10">
+					<figure>
+						<img
+							src="Images/collection-01.png"
+							alt="Grass top"
+							class="rounded-tl-3xl"
+						/>
+					</figure>
+					<figure class="md:-translate-y-8">
+						<img src="Images/collection-02.png" alt="Sofa" />
+					</figure>
+					<figure>
+						<img
+							src="Images/collection-03.png"
+							alt="Light"
+							class="rounded-br-3xl"
+						/>
+					</figure>
+				</div>
+			</section>
+
+			<!-- * BEAUTY SECTION -->
+
+			<section class="hero py-16 bg-mini_section">
+				<div
+					class="grid grid-cols md:grid-cols-2 container p-0 items-center md:gap-6"
+				>
+					<div class="section-heading">
+						<h1 class="content-heading">Beautify Your Space</h1>
+						<p class="content-summary mb-8 leading-loose">
+							Transform your surroundings and elevate your living experience
+							with our exquisite collection. Beautify your space with timeless
+							furniture that blends comfort, functionality, and captivating
+							design, making every moment at home truly exceptional.
+						</p>
+						<button class="btn-rounded">Learn More</button>
+					</div>
+					<figure
+						class="w-full relative z-0 after:absolute after:content-[''] after:w-96 after:aspect-square after:rounded-full after:bg-green-800 after:top-1/2 after:-translate-y-1/2 lg:after:translate-x-1/2 after:-z-10"
+					>
+						<img
+							src="Images/girl.png"
+							class="max-w-sm rounded-lg shadow-2xl m-auto"
+						/>
+					</figure>
+				</div>
+			</section>
+
+			<!-- * CHOICES FURNITURE -->
+
+			<section class="py-16">
+				<div class="container">
+					<div class="section-heading text-center">
+						<h2 class="content-heading">Browse The Range</h2>
+						<p class="content-summary text-base">
+							Discover the essence of style and comfort as you browse our
+							diverse range of furniture, designed to elevate every corner of
+							your living space.
+						</p>
+					</div>
+					<div class="grid gap-10 grid-cols-1 md:gap-10 md:grid-three">
+						<figure>
+							<img src="Images/image-01.png" alt="" class="rounded-lg" />
+							<figcaption class="choice-caption">Dining</figcaption>
+						</figure>
+						<figure>
+							<img src="Images/image-02.png" alt="" class="rounded-lg" />
+							<figcaption class="choice-caption">Living</figcaption>
+						</figure>
+						<figure>
+							<img src="Images/image-03.png" alt="" class="rounded-lg" />
+							<figcaption class="choice-caption">Bedroom</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<!-- * WORKING SYSTEM -->
+
+			<section class="py-16 border">
+				<div class="container">
+					<div class="section-heading text-center text-base">
+						<h2 class="content-heading">How It Works</h2>
+						<p class="content-summary">
+							Explore simplicity in furnishing—browse, choose, and transform
+							your space with our hassle-free 'How It Works' process, making
+							interior enhancement a seamless experience
+						</p>
+					</div>
+
+					<div class="grid gap-10 grid-cols-1 md:gap-10 md:grid-three">
+						<figure>
+							<div class="relative">
+								<img src="Images/man.png" alt="" class="rounded-lg" />
+								<p class="work-number">1.</p>
+							</div>
+							<figcaption class="choice-caption mt-10">
+								<h3>Purchase Securely</h3>
+								<p class="work-caption">
+									Shop with peace of mind - your purchases are secure.
+								</p>
+							</figcaption>
+						</figure>
+						<figure>
+							<div class="relative">
+								<img src="Images/building.png" alt="" class="rounded-lg" />
+								<p class="work-number">2.</p>
+							</div>
+							<figcaption class="choice-caption mt-10">
+								<h3>Ships From Warehouse</h3>
+								<p class="work-caption">
+									Swift delivery as your furniture ships directly from our
+									warehouse
+								</p>
+							</figcaption>
+						</figure>
+						<figur>
+							<div class="relative">
+								<img src="Images/light.png" alt="" class="rounded-lg" />
+								<p class="work-number">3.</p>
+							</div>
+							<figcaption class="choice-caption mt-10">
+								<h3>Style Your Room</h3>
+								<p class="work-caption">
+									Style your room effortlessly with our curated collection.
+								</p>
+							</figcaption>
+						</figur>
+					</div>
+				</div>
+			</section>
+
+			<!-- * NEWSLETTER SECTION -->
+
+			<section class="py-16 bg-mini_section">
+				<div class="container">
+					<div class="section-heading text-center">
+						<h2 class="content-heading">Join Our Mailing List</h2>
+						<p class="content-summary">
+							Sign up to receive inspiration, product updates, and special
+							offers from our team.
+						</p>
+					</div>
+					<form
+						action="#"
+						class="flex items-stretch border-2 border-primary w-max m-auto"
+					>
+						<input
+							type="text"
+							class="outline-none pl-5 md:px-5 md:pr-20 font-medium placeholder:font-normal"
+							placeholder="example@gmail.com"
+						/>
+						<button class="bg-primary text-white py-3 px-7 font-medium">
+							Submit
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<!-- * FOOTER COMPONENTS -->
+
+		<footer class="py-16 bg-primary">
+			<div class="container">
+				
+			</div>
+		</footer>
+
+		<!-- * ICON REFERENCE -->
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>

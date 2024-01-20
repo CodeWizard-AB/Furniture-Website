@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: "Montserrat", sans-serif;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+@layer components {
+	.btn-rounded {
+		@apply btn bg-primary/95 hover:bg-primary px-14 rounded-full text-white text-lg;
+	}
+
+	.grid-three {
+		@apply grid grid-cols-1 md:grid-cols-3 md:gap-0 gap-5;
+	}
+
+	.service {
+		@apply flex md:flex-col lg:flex-row items-center gap-8 md:text-center lg:text-left;
+	}
+
+	.service-heading {
+		@apply font-semibold text-2xl mb-1;
+	}
+
+	.content-summary {
+		@apply font-medium leading-normal;
+	}
+
+	.content-heading {
+		@apply text-3xl font-semibold mb-3;
+	}
+
+	.section-heading {
+		@apply max-w-screen-sm mx-auto md:text-lg mb-12 text-base;
+	}
+
+	.choice-caption {
+		@apply font-semibold text-xl mt-5 text-center;
+	}
+
+	.work-caption {
+		@apply text-center text-sm font-medium mt-2;
+	}
+	
+	.work-number {
+		@apply absolute bottom-0 left-1/2 bg-black text-white w-16 h-16 rounded-full grid place-items-center font-semibold text-xl -translate-x-1/2 translate-y-1/2 border-8 border-white;
+	}
+}
+
+@layer utilities {
+	.container {
+		@apply max-w-screen-xl px-8 mx-auto;
+	}
+}
