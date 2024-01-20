@@ -1725,12 +1725,12 @@ img {
   margin-bottom: 2rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .flex {
@@ -1753,13 +1753,13 @@ img {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .max-w-16 {
@@ -1786,6 +1786,54 @@ img {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-\[auto\>\] {
+  grid-template-columns: auto>;
+}
+
+.grid-cols-\[auto\] {
+  grid-template-columns: auto;
+}
+
+.grid-cols-\[auto_1fr\] {
+  grid-template-columns: auto 1fr;
+}
+
+.grid-cols-\[auto_\] {
+  grid-template-columns: auto;
+}
+
+.grid-cols-\[auto_2fr\] {
+  grid-template-columns: auto 2fr;
+}
+
+.grid-cols-\[_1fr\] {
+  grid-template-columns: 1fr;
+}
+
+.grid-cols-\[1fr\] {
+  grid-template-columns: 1fr;
+}
+
+.grid-cols-\[1fr_2fr\] {
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-cols-\[0\.4fr_2fr\] {
+  grid-template-columns: 0.4fr 2fr;
+}
+
+.grid-cols-\[0\.4fr_0\.6fr\] {
+  grid-template-columns: 0.4fr 0.6fr;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1806,8 +1854,24 @@ img {
   gap: 1.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-52 {
+  gap: 13rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-0 {
+  gap: 0px;
 }
 
 .space-x-16 > :not([hidden]) ~ :not([hidden]) {
@@ -1826,10 +1890,6 @@ img {
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.rounded-none {
-  border-radius: 0px;
 }
 
 .rounded-br-3xl {
@@ -1858,6 +1918,11 @@ img {
   background-color: rgb(242 245 255 / var(--tw-bg-opacity));
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 76 115 / var(--tw-bg-opacity));
+}
+
 .bg-primary\/95 {
   background-color: rgb(5 76 115 / 0.95);
 }
@@ -1865,11 +1930,6 @@ img {
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(223 233 244 / var(--tw-bg-opacity));
-}
-
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 76 115 / var(--tw-bg-opacity));
 }
 
 .p-0 {
@@ -1885,6 +1945,11 @@ img {
   padding-right: 3.5rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1895,49 +1960,22 @@ img {
   padding-bottom: 4rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pl-5 {
   padding-left: 1.25rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
-}
-
-.pr-16 {
-  padding-right: 4rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1959,6 +1997,16 @@ img {
   line-height: 1.75rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1971,8 +2019,20 @@ img {
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
 .leading-loose {
   line-height: 2;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .tracking-wider {
@@ -1999,9 +2059,9 @@ img {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
+.text-slate-200 {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
@@ -2071,14 +2131,6 @@ img {
 
 .placeholder\:font-normal::placeholder {
   font-weight: 400;
-}
-
-.placeholder\:font-thin::-moz-placeholder {
-  font-weight: 100;
-}
-
-.placeholder\:font-thin::placeholder {
-  font-weight: 100;
 }
 
 .after\:absolute::after {
@@ -2151,12 +2203,20 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-\[0\.4fr_0\.6fr\] {
+    grid-template-columns: 0.4fr 0.6fr;
+  }
+
   .md\:gap-10 {
     gap: 2.5rem;
   }
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:gap-14 {
+    gap: 3.5rem;
   }
 
   .md\:p-12 {
